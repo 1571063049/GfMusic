@@ -1,0 +1,87 @@
+<!--pages/home/index.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<van-search
+  background="#fafafa"
+  placeholder="请输入您喜欢的歌曲"
+  shape="round"
+  placeholder-style="color:#666"
+  disabled
+  bind:click-input="handleToSearch"
+/>
+
+<swiper class="swiper" 
+        indicator-dots
+        autoplay 
+        circular 
+        interval="3000"
+        style="height: {{swiperHeight}}px;"
+        >
+  <block wx:for="{{bannerList}}" wx:if="{{bannerList.length != 0}}" wx:key="id">
+    <swiper-item class="swiper-item">
+      <image class="swiper-img"
+             src="{{item.pic}}"
+             mode="widthFix" 
+             bindload="handleSwiperImageLoaded"
+             ></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="recommend" wx:if="{{recommend.length != 0}}">
+  <area-header title="歌曲推荐"  bindtap="handlerecommendHeaderClick"></area-header>
+  <view class="recommend-list">
+    <block wx:for="{{recommendSongList}}" wx:key="id">
+      <music-item-v1 item="{{item}}"
+                     bindtap="handleSongPlayerClick"
+                     data-index="{{index}}"
+                     ></music-item-v1>
+    </block>
+  </view>
+</view>
+
+<!-- 热门歌单 -->
+<song-list title="热门歌单"
+           Menulist="{{hotMenuList}}"  
+           wx:if="{{hotMenuList.length != 0}}"
+           ></song-list>
+<!-- 推荐歌单 -->
+<song-list title="推荐歌单" 
+           Menulist="{{recommendMunuList}}"  
+           wx:if="{{recommendMunuList.length != 0}}"
+           ></song-list>
+
+<!-- 巅峰榜 -->
+<view class="extreme" wx:if="{{topList.length != 0}}">
+  <area-header title="巅峰榜" showright="{{false}}"  ></area-header>
+  <view class="extreme-list">
+   <block wx:for="{{topList}}" wx:key="index">
+    <!-- 遍历对象 {{item}} 代表值  {{iddex} 代表键} -->
+    <top-list-item item="{{item}}" idx="{{index}}"></top-list-item>
+   </block>
+  </view>
+</view>
+
+<!-- 音乐播放窗口 -->
+<view class="play-bottom" wx:if="{{currentSong.id}}"></view>
+<view class="play-bar" wx:if="{{currentSong.id}}" bindtap="handleToMusicPlayerDetail">
+  <view class="left">
+    <image class="play-image play-rotate"
+           style="animation-play-state:{{playAnimationState}}"
+           mode="widthFix" 
+           src="{{currentSong.al.picUrl}}"
+           ></image>
+    <view class="play-name">{{currentSong.name}}</view>
+  </view>
+  <view class="center">
+    <view class="play-lyric">{{currentLyric}}</view>
+  </view>
+  <view class="right">
+    <image class="play-button"
+           mode="widthFix"
+          src="/assets/images/music/{{playState}}_icon.png"
+          catchtap="handleMusicPlay"
+          ></image>
+    <image class="play-list" mode="widthFix" src="/assets/images/music/playlist_icon.png"></image>
+  </view>
+
+</view>

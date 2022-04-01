@@ -1,0 +1,17 @@
+/* components/menu-list/index.wxss */
+.menu-list{
+  width: 100%;
+}
+.menu-title{
+  margin-bottom: 20rpx;
+}
+.menu-item{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item{
+  width: 49%;
+  margin-bottom: 10rpx;
+}

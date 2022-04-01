@@ -1,0 +1,28 @@
+<!--pages/video-detail/index.wxml-->
+<wxs module="format" src="/utils/format.wxs" ></wxs>
+
+<view class="mvplay">
+  <video class="detail-mvplay"
+      src="{{MvAddress.url}}" 
+      autoplay 
+      >
+  </video>
+</view>
+<scroll-view class="detail">
+  <view class="mvplay-info" > 
+    <view class="info-title">{{MvDetail.name}}</view>
+    <view class="info-name">-{{MvDetail.artistName}}-</view>
+    <view class="info-text">
+      {{format.formatCount(MvDetail.playCount)}}次播放 - {{MvDetail.publishTime}}
+    </view>
+  </view>
+
+  <view class="detail-recommend">
+    <view class="recommend-title">推荐视频</view>
+    <view class="recommend-list">
+      <block wx:for="{{MvRelated}}" wx:key="id">
+        <video-item-v2 item="{{item}}"></video-item-v2>
+      </block>
+    </view>
+  </view>
+</scroll-view>

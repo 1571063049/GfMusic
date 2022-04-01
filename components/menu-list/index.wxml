@@ -1,0 +1,12 @@
+<!--components/menu-list/index.wxml-->
+<view class="menu-list">
+  <area-header class="menu-title" title="{{item.name}}" showright="{{false}}"></area-header>
+  <view class="menu-item">
+    <block wx:for="{{item.list}}" wx:key="id">
+      <menu-list-item class="item" 
+                      item="{{item}}"
+                      ></menu-list-item>
+    </block>
+  </view>
+</view>
+

@@ -1,0 +1,6 @@
+<!--components/search-suggest-item/index.wxml-->
+<view class="suggest-item">
+  <image class="item-icon" mode="widthFix" src="/assets/images/icons/search_icon.png" alt=""/>
+  <!-- <text class="item-title">{{item.keyword}}</text> -->
+  <rich-text class="item-title" nodes="{{nodes}}">1</rich-text>
+</view>

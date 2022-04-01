@@ -1,0 +1,21 @@
+/* components/menu-list-item/index.wxss */
+.item-img{
+  position: relative;
+  display: flex;
+}
+.item-playcount{
+  position: absolute;
+  right: 0rpx;
+  bottom: 1rpx;
+  font-size: 24rpx;
+  padding: 3rpx 7rpx;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  border-radius: 8rpx;
+}
+.item-image{
+  width: 350rpx;
+}
+.item-title{
+  font-size: 28rpx;
+}

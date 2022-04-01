@@ -1,0 +1,41 @@
+/* components/area-header/index.wxss */
+.header{
+  width: 710rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header .title{
+  font-size: 35rpx;
+  font-weight: 700;
+  color: #333;
+}
+.header .right{
+  display: flex;
+  width: 300rpx;
+  height: 60rpx;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .slot{
+  width: 110rpx;
+  height: 50rpx;
+}
+
+.header .slot:empty+.default{
+  display: flex;
+}
+.default{
+  display: none;
+  align-items: center;
+  width: 110rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}

@@ -1,0 +1,183 @@
+/* pages/player-detail/index.wxss */
+page{
+  padding: 0;
+  color: #fff;
+}
+/* 背景 */
+.bg-image,.bg-cover{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.bg-cover{
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(40rpx);
+}
+
+/* 头部 */
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+.tab-line{
+  width: 2px;
+  height: 30rpx;
+  margin: 0 8px;
+  background-color: #fff;
+}
+
+/* 内容 */
+.content{
+  color: #fff;
+}
+.active{
+  color: #ccc;
+  transition: .5s;
+}
+/* 歌曲内容 */
+.content .music{
+  padding: 30rpx 60rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.music-image{
+  width: 100%;
+  height: 100%;
+  flex: 5;
+  border-radius: 20rpx;
+}
+.music-info{
+  margin: 20rpx 0;
+}
+.music-info .music-title{
+  font-size: 48rpx;
+  font-weight: 700;
+}
+.music-info .music-name , 
+.music-info .music-album{
+  margin: 15rpx 0;
+  font-size: 28rpx;
+  color: #eee;
+}
+
+.music-lyric{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  color: #ccc;
+}
+
+.music-lyric-item{
+  width: 690rpx;
+  text-align: center;
+  height: 52rpx;
+  line-height: 52rpx;
+  font-size: 32rpx;
+  color: #ff9a3c;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* background: #fff -webkit-linear-gradient(left, #ff9a3c, #ff9a3c) no-repeat 0 0;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  background-size:0 100%;
+  animation: lyricMove 2s linear;
+  animation-fill-mode:forwards; */
+}
+/* 当前歌词样式 */
+/* .music-active-lyric{ */
+  /* animation: lyricMove 3s linear;
+  animation-fill-mode:forwards; */
+/* } */
+
+.music-slider{
+  margin: 20rpx 0;
+}
+.music-bar{
+  margin: 10px 6px;
+}
+.music-text{
+  display: flex;
+  justify-content: space-between;
+}
+.start-time,.end-time{
+  font-size: 26rpx;
+}
+
+.music-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.music-buttons .icon{
+  width: 70rpx;
+}
+.music-buttons .icon:nth-child(3){
+  width: 120rpx;
+}
+
+
+
+/* 歌词内容 */
+.lyric-scroll{
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.lyric-list{
+  color: #ccc;
+}
+.lyric-list::after{
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.lyric-item{
+  width: 690rpx;
+  font-size: 30rpx;
+  text-align: center;
+  transition: 1s;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-overflow: ellipsis;
+  /*歌词滚动样式 */
+  background: #fff -webkit-linear-gradient(left, #ff9a3c, #ff9a3c) no-repeat 0 0;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  background-size:0 100%;
+}
+.active-lyric{
+  font-size: 36rpx;
+  color: #ff9a3c;
+  animation: lyricMove 2s linear;
+  animation-fill-mode:forwards;
+}
+@keyframes lyricMove{
+  from{
+    background-size:0 100%;
+  }
+  to{
+    background-size:100% 100%;
+  }
+}

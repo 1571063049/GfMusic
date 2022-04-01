@@ -1,0 +1,36 @@
+/* pages/home-profile/index.wxss */
+.btn{
+  width: 750rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.profile{
+  width: 750rpx;
+  height: 100vh;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.header{
+    height: 180rpx;
+    display: flex;
+    align-items: center
+  }
+.img{
+  width: 140rpx;
+  height: 140rpx;
+}
+.user{
+  flex: 1;
+  margin-left: 20px;
+}
+.user-name{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.user-gender{
+  font-size: 32rpx;
+  margin-top: 5rpx;
+}

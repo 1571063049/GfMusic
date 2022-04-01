@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "top-list-song":"/components/top-list-song/index",
+    "song-header":"./comps/song-header/index",
+    "area-header":"/components/area-header/index"
+  }
+}

@@ -1,0 +1,53 @@
+/* components/video-item-v1/index.wxss */
+.item{
+  width: 340rpx;
+  height: 290rpx;
+  border-radius: 20rpx;
+  margin: 7.99rpx;
+  overflow: hidden;
+}
+.item-detail{
+  width: 340rpx;
+  height: 190rpx;
+  border-radius: 20rpx;
+  position: relative;
+  overflow: hidden;
+  margin: 4rpx 0 10rpx 0;
+}
+.item-image{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.item-count,.item-time{
+  position: absolute;
+  bottom: 8rpx;
+  font-size: 27rpx;
+  color: #fff;
+}
+.item-count{
+  left: 4rpx;
+  width: 160rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-mvicon{
+  width: 31rpx;
+  height: 27rpx;
+  margin: 0 6rpx 0 14rpx;
+}
+.item-time{
+  right: 8rpx;
+}
+.item-text{
+  height: 80rpx;
+  width: 340rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 2;  /*最多显示5行*/
+  overflow: hidden;  /*超出隐藏*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+}

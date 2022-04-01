@@ -1,0 +1,20 @@
+<!-- 从event中获取用户信息，且不需用户点击获取用户信息就可以获取（目前微信已经不支持） -->
+<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserProfile">获取用户信息</button> -->
+<button class="btn"
+        open-type="getUserInfo" 
+        bindtap="handleGetUserProfile"
+        >获取用户信息</button>
+
+<view class="profile" wx:if="{{isShow}}">
+  <view class="header">
+    <image class="img" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user">
+      <view class="user-name">{{userInfo.nickName}}</view>
+      <view class="user-gender">微信号: "微信用户"</view>
+    </view>
+  </view>
+</view>
+
+<!-- <button open-type="getPhoneNumber" bindgetphonenumber="handleGetUserPhoneNumber">获取手机信息</button> -->
+
+

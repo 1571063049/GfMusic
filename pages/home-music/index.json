@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "area-header":"/components/area-header",
+    "music-item-v1":"/components/music-item-v1/index",
+    "song-list":"/components/song-list/index",
+    "top-list-item":"/components/top-list-item/index"
+  },
+  "navigationBarTitleText":"GFMusic"
+}

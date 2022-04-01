@@ -1,0 +1,21 @@
+<!--components/top-list/index.wxml-->
+<view class="item" bindtap="handleToMusicPlayer">
+    <view class="item-index">{{index + 1}}</view>
+    <view class="item-info">
+      <view class="item-title">{{item.name}}</view>
+      <view class="item-text">
+        <!-- <image wx:if="{{item.no ===1}}" class="item-icon" src="../../assets/images/icons/sq_icon.png"></image> -->
+        <image wx:if="{{item.mvid !== undefined && item.mvid !==0}}" 
+               catchtap="ClickMvPlay" 
+               class="item-mvicon" 
+               src="/assets/images/icons/play_icon.png"
+        ></image>
+        <image class="item-icon" src="/assets/images/icons/sq_icon.png"></image>
+        <view class="item-name">{{item.ar[0].name}}</view>
+        <text wx:if="{{item.alia[0]}}" class="item-dots">·</text>
+        <text wx:if="{{item.alia[0]}}" class="item-des">{{item.alia[0]}}</text>
+        <view wx:if="{{item.artists[0]}}" class="item-name">{{item.artists[0].name}}</view>
+      </view>
+    </view> 
+</view>
+

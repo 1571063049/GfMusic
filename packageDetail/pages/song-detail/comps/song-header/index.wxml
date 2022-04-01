@@ -1,0 +1,29 @@
+<!--pages/song-detail/comps/song-header/index.wxml-->
+<view class="song-head">
+  <view class="song-img" style="background-image : url('{{songDetail.coverImgUrl}}')"></view>
+  <view class="song-content">
+    <view class="content-info">
+      <view class="content-info-image">
+        <image class="info-image-img" src="{{songDetail.coverImgUrl}}"></image>
+      </view>
+      <view class="content-info-text">
+        <view class="info-text-title">{{songDetail.name}}</view>
+        <view class="info-text-name">
+          <view class="text-name-header">
+            <image src="{{songDetail.creator.avatarUrl}}" class="name-header-img"></image>
+          </view>
+          {{songDetail.creator.nickname}}
+        </view>
+        <view class="info-text-descript">简介: {{songDetail.description}}</view>
+      </view>
+    </view>
+    <view class="content-function">
+      <view class="function-love">
+        <image class="funciton-img" src="./../../../../assets/icons/favor_icon.png"></image>1.2万
+      </view>
+      <view class="function-share">
+        <image class="funciton-img" src="./../../../../assets/icons/share_icon.png"></image>分享
+      </view>
+    </view>
+  </view>
+</view>

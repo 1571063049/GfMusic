@@ -1,0 +1,108 @@
+/* pages/song-search/index.wxss */
+page{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.van-search{
+  padding: 10px 0 !important;
+}
+.van-search__content{
+  background-color: #fff !important;
+}
+.blank{
+  text-align: center;
+}
+
+/* 热门推荐 */
+.hot{
+  width: 710rpx;
+}
+.hot-title{
+  font-size: 38rpx;
+  margin: 20rpx 0;
+}
+.hot-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.hot-item{
+  padding: 10rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+.hot-item:nth-child(1){
+  color: #26d7a2;
+}
+
+
+/* 搜索推荐 */
+.suggest{
+  width: 710rpx;
+}
+.suugets-head{
+  color: #26d7a2;
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-left: 12rpx;
+}
+.suggest-item{
+  display: flex;
+  align-items: center;  
+  margin: 10rpx 0;
+}
+.item-icon{
+  width: 66rpx;
+  vertical-align: middle;
+}
+.item-title{
+  flex: 1;
+}
+
+
+
+/* 搜索结果 */
+.result{
+  width: 710rpx;
+}
+.result-title{
+  color: #26d7a2;
+  font-size: 32rpx;
+}
+.result-item{
+  display: flex;
+  width: 100%;
+  height: 82rpx;
+}
+
+
+/* 历史搜索 */
+.history{
+  width: 710rpx;
+}
+.history-header{
+  display: flex;
+  font-size: 38rpx;
+  margin: 20rpx 0;
+  justify-content: space-between;
+}
+
+.history-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.history-item{
+  padding: 3rpx 10rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin: 10rpx;
+  font-size: 30rpx;
+  border: 1px solid #333;
+}

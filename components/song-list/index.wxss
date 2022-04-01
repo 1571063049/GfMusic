@@ -1,0 +1,19 @@
+/* components/song-list/index.wxss */
+/* 歌单 */
+
+.menu-scroll{
+  white-space: nowrap;
+  /* width: 100vw; */ 
+  box-sizing: border-box;
+  position: relative;
+  left: -23rpx;
+}
+.song-list-item {
+  vertical-align: top;
+  display: inline-block;
+  width: 220rpx;
+  margin-left: 24rpx;
+}
+.song-list-item:last-of-type{
+  margin-right: 20rpx;
+}

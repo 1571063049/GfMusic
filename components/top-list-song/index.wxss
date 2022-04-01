@@ -1,0 +1,65 @@
+/* components/top-list/index.wxss */
+.item{
+  width: 700rpx;
+  height: 85rpx;
+  display: flex;
+  align-items: center;
+  margin: 30rpx 0 10rpx 0;
+}
+.item-index{
+  width: 60rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  margin-right:15rpx;
+}
+.item-info{
+  width: 600rpx;
+  flex: 1;
+  height: 85rpx;
+}
+.item-title{
+  width: 100%;
+  font-size: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin: 5rpx 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.item-text{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8rpx;
+}
+.item-mvicon{
+  width: 40rpx;
+  height: 23rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  background-color: tan;
+}
+.item-icon{
+  width: 38rpx;
+  height: 22rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.item-name{
+  padding: 0 2rpx;
+  font-size: 26rpx;
+}
+.item-dots{
+  margin: 0 3rpx;
+}
+.item-des{
+  width: 400rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 38rpx;
+  font-size: 26rpx;
+}

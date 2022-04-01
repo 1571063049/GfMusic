@@ -1,0 +1,14 @@
+/* pages/song-detail/index.wxss */
+page{
+  padding: 0;
+  box-sizing: border-box;
+}
+.song-title{
+  width: 750rpx;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.detail-list{
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}

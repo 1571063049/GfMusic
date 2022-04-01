@@ -1,0 +1,53 @@
+/* pages/video-detail/index.wxss */
+/* mv播放 */
+page{
+  margin-top: 225px;
+  padding: 0;
+}
+.mvplay{
+  width: 750rpx;
+  height: 225px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.detail-mvplay{
+  width: 750rpx;
+  height: 225px;
+}
+/* 播放详情 */
+.detail{
+  width: 750rpx;
+  height: 100%;
+}
+.mvplay-info{
+  width: 750rpx;
+  height: 160rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.info-title{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.info-name,
+.info-text{
+  font-size: 24rpx;
+  color: #333;
+  margin: 14rpx 0;
+}
+/* 推荐视频 */
+.detail-recommend{
+  width: 750rpx;
+  padding: 30rpx;
+}
+.recommend-title{
+  margin: 10rpx 0;
+}
+.recommend-list{
+  display: flex;
+  flex-wrap: wrap;
+}

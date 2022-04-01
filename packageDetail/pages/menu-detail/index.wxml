@@ -1,0 +1,6 @@
+<!--pages/menu-detail/index.wxml-->
+<view>
+  <block wx:for="{{SongManuList}}" wx:key="index">
+    <menu-list item="{{item}}"></menu-list>
+  </block>
+</view>

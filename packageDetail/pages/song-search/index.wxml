@@ -1,0 +1,61 @@
+<!--pages/song-search/index.wxml-->
+<van-search
+  background="#f7f7f7"
+  value="{{searchValue}}"
+  placeholder="请输入您喜欢的歌曲"
+  shape="round"
+  placeholder-style="color:#999"
+  show-action="{{value.length != 0}}"
+  bind:cancel="handleClearSearch"
+  bind:clear="handleClearSearch"
+  bind:focus="handleFocusSearch"
+  bind:change="handleToSuggestSearch"
+  bind:search="handleToSearchResult"
+/>
+
+<!-- <view wx:if="{{currentType === 0}}" class="blank">
+  ------------请输入内容哦------------
+</view> -->
+<!-- 2.热门搜索 -->
+<view class="hot" wx:if="{{!searchValue.length && !suggestList.length}}">
+  <view class="hot-title">热门搜索</view>
+  <view class="hot-list">
+    <block wx:for="{{hotList}}" wx:key="id">
+    <view class="hot-item" bindtap="handleClickToResult" data-keyword="{{item.first}}">
+      {{item.first}}
+    </view>
+  </block>
+  </view>
+</view>
+<!-- 3.建议搜索 -->
+<view class="suugets" wx:elif="{{suggestList.length && !resultList.length}}">
+  <view class="suugets-head">搜索"{{value}}"</view>
+  <block wx:for="{{suggestList}}" wx:key="id">
+    <search-suggest-item  nodes="{{suggestSongsNodes[index]}}"
+                            data-keyword="{{item.keyword}}"  
+                            bindtap="handleClickToResult"
+    >
+    </search-suggest-item>
+  </block>
+</view>
+
+<!-- 4.结果搜索 -->
+<view class="result" wx:elif="{{resultList.length}}">
+  <view class="result-title">最佳匹配</view>
+  <block wx:for="{{resultList}}" wx:key="index">
+    <top-list-song item="{{item}}" index="{{index}}"></top-list-song>
+  </block>
+</view>
+
+<!-- 5.历史搜索 -->
+<view class="history" wx:if="{{hotList.length && !suggestList.length}}"> 
+  <view class="history-header">
+    <view>历史搜索 </view>
+    <van-icon name="delete-o" bindtap="hanldeDeleteStorage" />
+  </view>
+  <view class="history-list">
+    <block wx:for="{{historyList}}" wx:key="index">
+      <view class="history-item" >{{item}}</view>
+    </block>
+  </view>
+</view>

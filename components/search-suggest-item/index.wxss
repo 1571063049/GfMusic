@@ -1,0 +1,13 @@
+/* components/search-suggest-item/index.wxss */
+.suggest-item{
+  display: flex;
+  align-items: center;  
+  margin: 10rpx 0;
+}
+.item-icon{
+  width: 66rpx;
+  vertical-align: middle;
+}
+.item-title{
+  flex: 1;
+}

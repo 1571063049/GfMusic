@@ -1,0 +1,17 @@
+<!--components/music-item-v1/index.wxml-->
+<view class="item" bindtap="handleToMusicPlayer">
+  <item class="item-image">
+    <image class="item-image-img" src="{{item.al.picUrl}}"></image>
+  </item>
+  <view class="item-text">
+    <view class="item-title">
+      {{item.name}}
+    </view>
+    <view class="item-name">
+      {{item.al.name}}
+    </view>
+  </view>
+  <view class="item-more">
+    <view class="item-more-icon"></view>
+  </view>
+</view>

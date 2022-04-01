@@ -1,0 +1,132 @@
+/* pages/home/index.wxss */
+/* 头部搜索 */
+
+.van-search{
+  padding: 10px 0 !important;
+}
+.van-search__content{
+  background-color: #fff !important;
+}
+/* 手机系统有一些不支持圆角,加上 transform: translateY(0);*/
+.swiper{
+  height: 150px;
+  border-radius: 10rpx;
+  overflow: hidden;
+  transform: translateY(0);
+}
+/* 轮播 */
+.swiper-item {
+  display: flex;
+}
+
+.swiper-item .swiper-img {
+  width: 100%;
+}
+
+/* 歌单推荐 */
+.recommend{
+  margin-top: 20rpx;
+}
+.recommend-list{
+  width: 710rpx;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+/* 巅峰榜 */
+.extreme{
+  width: 710rpx;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.extreme-list{
+  width: 690rpx;
+  height: 350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.play-bottom{
+  height: 44px;
+}
+/* 播放小窗口 */
+.play-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border-bottom: 1px solid #cbcbcb;
+  box-shadow: 0 -2rpx 5rpx rgba(0,0,0,0.2);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.left , .right{
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.left .play-image{
+  width: 44px;
+  border-radius: 50%;
+  position: relative;
+  top: -15rpx;
+  
+}
+.play-rotate{
+  animation: playRotate 10s linear infinite;
+  animation-play-state: paused;
+}
+
+.left .play-name{
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  width: 46px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.center{
+  flex: 1;
+  overflow: hidden;
+}
+.center .play-lyric{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #d19757;
+  overflow: hidden;
+}
+
+
+.right{
+  justify-content: flex-end;
+}
+.right .play-button{
+  width: 26px;
+  margin: 0 10rpx;
+}
+.right .play-list{
+  width: 30px;
+}
+@keyframes playRotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,12 @@
+<!--components/song-list-item/index.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="menu-item" bindtap="handleToMenuDetail" data-item="{{item}}">
+  <view class="menu-item-image">
+    <image class="menu-image-img" 
+           src="{{item.coverImgUrl}}"
+           mode="widthFix"
+           ></image>
+    <view class="menu-item-count">{{format.formatCount(item.playCount)}}</view>
+  </view>
+  <veiw class="menu-item-title">{{item.name}}</veiw>
+</view>

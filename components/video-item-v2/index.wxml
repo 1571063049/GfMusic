@@ -1,0 +1,12 @@
+<!--components/video-item-v2/index.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="item" bindtap="handleItemClickVideo">
+  <view class="item-img"> 
+    <image class="item-img-image" src="{{item.coverUrl}}"></image>
+    <view class="item-count">{{format.formatCount(item.playTime)}}</view>
+  </view>
+  <view class="item-text">
+    <view class="item-title">{{item.title}}</view>
+    <view class="item-name">{{item.creator[0].userName}}</view>
+  </view>
+</view>

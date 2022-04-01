@@ -1,0 +1,40 @@
+/* components/song-list-item/index.wxss */
+.menu-item{
+  width: 100%;
+  height: 310rpx;
+}
+.menu-item .menu-item-image{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.menu-item-image .menu-image-img{
+  height: 100%;
+  width: 100%;
+}
+.menu-item-image .menu-item-count{
+  position: absolute;
+  right: 2rpx;
+  bottom: 2rpx;
+  font-size: 24rpx;
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 6rpx;
+}
+.menu-item .menu-item-title{
+  margin: 10rpx auto;
+  width: 220rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:normal; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 2;
+}

@@ -1,0 +1,6 @@
+/**app.wxss**/
+page{
+  background-color: #fafafa;
+  box-sizing: border-box;
+  padding: 20rpx;
+}

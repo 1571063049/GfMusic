@@ -1,0 +1,108 @@
+/* pages/song-detail/comps/song-header/index.wxss */
+.song-head{
+  width: 750rpx;
+  height: 225px;
+  background-size: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.song-img{
+  width: 785rpx;
+  margin-left: -20rpx;
+  height: 225px;
+  background-size: 100%;
+  overflow: hidden;
+  filter: blur(1px);
+
+}
+.song-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 670rpx;
+  height: 300rpx;
+  z-index: 1;
+  color: #fff;
+}
+.content-info{
+  width: 100%;
+  height: 210rpx;
+  display: flex;
+}
+.content-info-image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-right: 40rpx;
+}
+.info-image-img{
+  width: 100%;
+  height: 100%;
+}
+.content-info-text{
+  width: 400rpx;
+}
+.info-text-title{
+  width: 100%;
+  height: 70rpx;
+  line-height: 35rpx;
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  margin-top: 5rpx;
+}
+.info-text-name{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 15rpx 15rpx 20rpx 0;
+}
+.text-name-header{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15rpx;
+}
+.name-header-img{
+  width: 100%;
+  height: 100%;
+}
+.info-text-descript{
+  width: 100%;
+  height: 30rpx;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content-function{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50rpx;
+}
+.funciton-love,.funciton-share{
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.funciton-img{
+  width: 46rpx;
+  height: 46rpx;
+  vertical-align: middle;
+}
+.detail-list{
+  padding: 25rpx;
+  box-sizing: border-box;
+}

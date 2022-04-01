@@ -1,0 +1,26 @@
+var formatCount = function(count){
+  var counter = parseInt(count);
+  if(counter < 10000) return count + ""
+  else if(counter <100000000){
+    return (counter / 10000).toFixed(1) + "万"
+  }
+  else return (counter / 100000000).toFixed(1) + "亿"
+}
+
+function timeLeftZero(str){
+  str = str.toString();
+  return ("00" + str).slice(str.length)
+}
+var formatDuration = function(duration,isMilliseconds){
+  isMilliseconds = isMilliseconds === undefined
+  if (isMilliseconds) {
+    duration = duration / 1000
+  }
+  var minutes = Math.floor(duration / 60);  //parsetInt 不应该 替代 Math.floor
+  var seconds = Math.floor(duration % 60);
+  return timeLeftZero(minutes) + ':' + timeLeftZero(seconds)
+}
+module.exports = {
+  formatCount : formatCount,
+  formatDuration : formatDuration
+}
