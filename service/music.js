@@ -11,9 +11,9 @@ export function getBanner(){
  * @param {} idx  0->飙升榜[0~6]为歌曲推荐
  */
 // 各种榜单（0 飙升 1 热门 2 新歌 3 原创）
-export function getTopList(idx){
+export function getTopList(id){
   return gfRequest.get('/top/list',{
-    idx
+    id
   })
 }
 

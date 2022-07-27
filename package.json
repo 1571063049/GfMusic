@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.10.0",
-    "hy-event-store": "^1.2.0"
+    "gf-event-store": "^1.0.3"
   }
 }

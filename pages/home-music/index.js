@@ -36,7 +36,7 @@ Page({
     // 从store获取共享的数据
     rankingStore.onState("hotSongList",(res) => {
       // 调用该方法时，默认会传入全局state中recommendSongList的值，当它的值发生变化时，又会传入一次值
-      if(!res.tracks) return 
+      if( !res || !res.tracks) return 
       const recommendSongList = res.tracks.slice(0,6);
       this.setData({ recommendSongList}) 
     });

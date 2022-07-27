@@ -1,11 +1,11 @@
-import { HYEventStore } from "hy-event-store"
+import { GFEventStore } from "gf-event-store"
 import {getMusicPlayerdata , getMusicLyricdata} from '../service/player'
 import {parseLyric} from '../utils/parsing-lyrics'
 
 // const audioContext = wx.createInnerAudioContext() //audioContext
 const audioContext = wx.getBackgroundAudioManager(); 
 
-const playerStore = new HYEventStore({
+const playerStore = new GFEventStore({
   state:{
     id:0,
     isFirstPlay:true,

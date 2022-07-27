@@ -1,7 +1,7 @@
 import {TOKEN_KEY} from '../constants/token_key-const'
 const  token = wx.getStorageSync(TOKEN_KEY);
 
-const BASE_URL = 'http://123.207.32.32:9001';
+const BASE_URL = 'https://coderwhy-music.vercel.app/';
 //不用部署
 const LOGIN_BASE_URL = "http://123.207.32.32:3000";
 
