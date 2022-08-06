@@ -12,7 +12,7 @@ export function getBanner(){
  */
 // 各种榜单（0 飙升 1 热门 2 新歌 3 原创）
 export function getTopList(id){
-  return gfRequest.get('/top/list',{
+  return gfRequest.get('/playlist/detail',{
     id
   })
 }
@@ -50,7 +50,7 @@ export function getMenuCategory(){
  * 必选参数 id
  */
 export function getSongdetail(id){
-  return gfRequest.get("/playlist/detail/dynamic",{
+  return gfRequest.get("/playlist/detail",{
     id
   })
 }
