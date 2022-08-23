@@ -21,12 +21,12 @@
       <view class="music-album" wx:if="{{currentSong.alia[0]}}">专辑：《{{currentSong.alia[0]}}》</view>
     </view>
     <view class="music-lyric" wx:if="{{lyricisShow}}" >
-      <view class="music-lyric-item">{{currentLyric}}</view>
-      <!-- <view class="music-lyric-list" style="transform: translateY({{ - currentIndex * 52}}rpx)">
+      <view class="music-lyric-item" style="color:#ff9a3c" wx:if="{{contentHeight < 720}}">{{currentLyric}}</view>
+      <view class="music-lyric-list" wx:else style="transform: translateY({{ - currentIndex * 52}}rpx)">
         <block wx:for="{{musicLyrics}}" wx:key="index">
-          <view class="music-lyric-item {{currentIndex === index ? 'music-active-lyric' : ''}}">{{item.text}}</view>
+          <view class="music-lyric-item {{currentIndex === index ? 'music-active-lyric music-lyric-item-scroll' : ''}}">{{item.text}}</view>
         </block>
-      </view> -->
+      </view>
     </view>
     <view class="music-slider">
       <slider class="music-bar" 
