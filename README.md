@@ -24,6 +24,10 @@
 
 ![image](https://user-images.githubusercontent.com/84273837/187821143-b8a87956-46bb-41c6-a117-be970ff1d32e.png)
 
+### 搜索界面
+
+![image](https://user-images.githubusercontent.com/84273837/187822770-49f2d92a-23eb-4480-bea1-d060bf408fe0.png)
+
 
 ### 项目mv界面展示
 
@@ -114,10 +118,11 @@ const node = {
       			2.将isSlidering的值设置为true,并根据slider变化的值来改变currentTime的值，slider变化会触发上面handleSliderChange方法
       			3.保存当前时间this.setData({currentTime , isSlidering : true })
             
-### 搜索界面
-![image](https://user-images.githubusercontent.com/84273837/187818165-3a286dcd-52f9-47cb-bc46-5a0536843d31.png)
+- **搜索富文本:**
+
 ![image](https://user-images.githubusercontent.com/84273837/187818112-0b4bec0c-23c3-4335-b905-554214e5421a.png)
-- ##### 搜索实现富文本(上右侧图): 
+
+- ##### 实现
 结合strinToNodes函数实现
 官方关于富文本的nodes的属性介绍
 
