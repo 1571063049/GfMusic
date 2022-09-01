@@ -1,34 +1,35 @@
 ##  qqMusic 小程序
-项目经过分包以及其他优化的包大小
+#### 项目经过分包以及其他优化的包大小
 
 ![image](https://user-images.githubusercontent.com/84273837/187820987-787f94e3-9e42-4875-9ebf-83a508a09790.png)
 ![image](https://user-images.githubusercontent.com/84273837/187819056-c991fa8e-df58-4413-9557-4f5446011be8.png)
 
-### 项目界面展示
+### 项目主界面展示
 
 ![image](https://user-images.githubusercontent.com/84273837/187819219-70d8c86d-901a-4169-9388-5ae9d3b45a19.png)
 
-歌曲推荐、热门歌单、推荐歌单
+#### 歌曲推荐、热门歌单、推荐歌单
 
 ![image](https://user-images.githubusercontent.com/84273837/187821055-73d9b6c5-9114-4044-9bc4-8f46d7c75cec.png) 
 
-新歌、原创、飙升 歌单
+#### 新歌、原创、飙升 歌单
 
 ![image](https://user-images.githubusercontent.com/84273837/187821093-5cbb7393-216b-45cc-b908-e9129948de4e.png)
 
-歌曲播放
+#### 歌曲播放
 
 ![image](https://user-images.githubusercontent.com/84273837/187821061-be1e1c25-1def-4b9c-948a-d29ee495f419.png)
 
-歌曲播放歌词
+#### 歌曲播放歌词
 
 ![image](https://user-images.githubusercontent.com/84273837/187821143-b8a87956-46bb-41c6-a117-be970ff1d32e.png)
 
 
-项目mv播放界面
+### 项目mv界面展示
 
 ![image](https://user-images.githubusercontent.com/84273837/187819226-99261cee-6cf0-4d77-b98b-52f79593d60e.png)
 
+### 项目具体功能介绍
 
 #### 1.采用清晰的目录文件和简洁页面结构进行整体布局
 - baseurl 是任何项目都可以使用到的组件
