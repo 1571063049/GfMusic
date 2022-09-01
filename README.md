@@ -122,8 +122,8 @@ const node = {
 
 ![image](https://user-images.githubusercontent.com/84273837/187818112-0b4bec0c-23c3-4335-b905-554214e5421a.png)
 
-- ##### 实现
-结合strinToNodes函数实现
+- #### 结合strinToNodes函数实现
+
 官方关于富文本的nodes的属性介绍
 
 ![image](https://user-images.githubusercontent.com/84273837/187817882-63783c4d-9f7a-4fe2-9525-b0d4827a290e.png)
