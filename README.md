@@ -1,6 +1,11 @@
 # 音乐小程序
+
 ##  qqMusic 小程序
-#### 项目经过分包以及其他优化的包大小
+
+### 使用技术
+- #### 原生微信小程序开发、vant、gf-event-store
+
+### 项目经过分包以及其他优化的包大小
 
 ![image](https://user-images.githubusercontent.com/84273837/187820987-787f94e3-9e42-4875-9ebf-83a508a09790.png)
 ![image](https://user-images.githubusercontent.com/84273837/187819056-c991fa8e-df58-4413-9557-4f5446011be8.png)
@@ -34,7 +39,7 @@
 
 ![image](https://user-images.githubusercontent.com/84273837/187819226-99261cee-6cf0-4d77-b98b-52f79593d60e.png)
 
-### 项目具体功能介绍
+### 构建
 
 #### 1.采用清晰的目录文件和简洁页面结构进行整体布局
 - baseurl 是任何项目都可以使用到的组件
